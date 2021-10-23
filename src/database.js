@@ -1,5 +1,5 @@
 const mongoose = require ("mongoose");
-const mongoUrl = "mongodb+srv://UserNovaDB:Nova12456@novaproject.drwkq.mongodb.net/MisionTic";
+const mongoUrl = process.env.MONGODB;
 const db = mongoose.connect(mongoUrl, {  },
     (error) => {
         if (error) {
